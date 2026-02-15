@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saarthi - AI Telecom Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Load Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar / Branding -->
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fas fa-robot brand-icon"></i>
+                <h1>Saarthi</h1>
+            </div>
+            <p class="tagline">Your Multilingual Telecom Companion</p>
+            <div class="features">
+                <div class="feature-item"><i class="fas fa-language"></i> Multiple Languages</div>
+                <div class="feature-item"><i class="fas fa-bolt"></i> Instant Support</div>
+                <div class="feature-item"><i class="fas fa-shield-alt"></i> Secure & Private</div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-interface">
+            <header class="chat-header">
+                <h2>Live Support</h2>
+                <span class="status-badge"><span class="dot"></span> Online</span>
+            </header>
+
+            <div id="chat-box" class="chat-box">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Namaste! I am <strong>Saarthi</strong>. I can help you with your telecom queries in English
+                            or Hindi.</p>
+                        <p>Try asking: <em>"Check my balance"</em> or <em>"Mera plan kya hai?"</em></p>
+                    </div>
+                    <div class="timestamp">Just now</div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <button id="record-btn" class="record-btn">
+                    <div class="icon-container">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <span id="btn-text">Tap to Speak</span>
+                </button>
+                <div id="status-text" class="status-text">Ready to listen...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
