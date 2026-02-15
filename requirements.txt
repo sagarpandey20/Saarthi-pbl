@@ -1,0 +1,7 @@
+Flask==3.0.0
+SpeechRecognition
+gTTS==2.5.0
+deep-translator
+# Backports for Python 3.13 removals
+standard-aifc
+standard-chunk
